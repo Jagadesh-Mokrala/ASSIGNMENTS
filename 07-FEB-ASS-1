@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include<string.h>
+struct student
+{
+    int sno;
+    char name[10];
+    char group[10];
+    int s1,s2,s3,total;
+    float avg;
+    char result[10];
+}s[100];
+int  main()
+{
+    int i,n,j;
+    printf(“Enter the number of students:”);
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+       
+        printf("\nEnter student roll number: ");
+        scanf("%d",&s[i].sno);
+        printf("\nEnter Student name: ");
+        scanf("%s",s[i].name);
+        printf("\nEnter Group: ");
+        scanf("%s",s[i].group);
+        printf("\nEnter subject-1 Marks: ");
+        scanf("%d",&s[i].s1);
+        printf("\nEnter subject-2 Marks: ");
+        scanf("%d",&s[i].s2);
+        printf("\nEnter subject-3 Marks: ");
+        scanf("%d",&s[i].s3);
+    
+        printf("---------------Student Information-------------------------------------------");
+        printf("\nsno:%d",s[i].sno);
+        printf("\nname:%s",s[i].name);
+        printf("\ngroup:%s",s[i].group);
+        printf("\nSubject-1: %d",s[i].s1);
+        printf("\nSubject-2: %d",s[i].s2);
+        printf("\nSubject-3: %d",s[i].s3);
+        int total=s[i].s1+s[i].s2+s[i].s3;
+        printf("\nTotal marks= %d",total);
+        s[i].avg = total/3.0;
+        printf("\nAverage=%.2f",s[i].avg);
+	    if(s[i].s1>34&&s[i].s2>34&&s[i].s3>34)
+        {
+            printf("\t\nPass");
+        }
+        else
+        {
+            printf("\nFail");
+        }
+    
+     return 0;
+    }
+}
