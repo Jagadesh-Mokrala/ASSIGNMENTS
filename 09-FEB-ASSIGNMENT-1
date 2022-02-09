@@ -1,0 +1,29 @@
+/*Program for Arithemetic Pointers*/
+#include <stdio.h>
+int main()
+{
+    int n=4;
+    int p;
+    p=&n;
+    printf("Pointer before Increment: ");
+    printf("%d \n", p);
+    p=p+1;
+    printf("Pointer after Increment: ");
+    printf("%d \n\n", p);
+    printf("Pointer before Decrement: ");
+    printf("%d \n", p);
+    p=p-1;
+    printf("Pointer after Decrement: ");
+    printf("%d \n\n", p);
+    printf("Pointer before Addition: ");
+    printf("%d \n", p);
+    p=p+3;
+    printf("Pointer after Addition: ");
+    printf("%d \n", p);
+    printf("\nPointer before Subtraction: ");
+    printf("%d \n",p);
+    p=p-3;
+    printf("Pointer after Subtraction: ");
+    printf("%d \n",p);
+    return 0;
+}
