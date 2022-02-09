@@ -2,9 +2,11 @@
 #include <stdio.h>
 int main()
 {
-    int n=4;
+    int n;
+    //int n=4;
     int p;
     p=&n;
+    scanf("%d",&n);
     printf("Pointer before Increment: ");
     printf("%d \n", p);
     p=p+1;
