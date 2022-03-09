@@ -1,0 +1,12 @@
+create table university(regid number(10)primary key,studentname varchar(20),gender varchar(10),year number(10),collegename varchar(30));
+
+desc university;
+
+insert into university values(101,'jagadesh','Male',2020,'adcamp');
+insert into university values(102,'ravi','Male',2019,'bvc');
+insert into university values(103,'kamala','FeMale',2020,'adcamp');
+insert into university values(104,'raja','Male',2020,'bvc');
+insert into university values(105,'rama','Male',2020,'adcamp');
+
+select *from university;
+
